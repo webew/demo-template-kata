@@ -1,0 +1,5 @@
+:root {
+	--big-square-width: 682px;
+	--big-square-height: calc(var(--big-square-width) - 28px);
+	--square-side: 400px;
+}

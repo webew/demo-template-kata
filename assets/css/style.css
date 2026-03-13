@@ -1,0 +1,58 @@
+@import url(./variables.css);
+
+body {
+	margin: 0;
+}
+
+main {
+	display: flex;
+}
+
+section {
+	height: 100vh;
+	width: 50vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main > section:nth-child(1) {
+	background-color: red;
+}
+
+main > section:nth-child(2) {
+	background-color: green;
+}
+
+#big_square {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: var(--big-square-width);
+	height: var(--big-square-height);
+	background-color: #506485;
+}
+
+#circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(var(--big-square-width) - 30px);
+	height: calc(var(--big-square-height) - 30px);
+	background-color: #445571;
+	border-radius: 50%;
+}
+
+#square {
+	width: var(--square-side);
+	height: 450px;
+	background-color: #3a4860;
+}
+
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 225px solid transparent;
+	border-right: 225px solid transparent;
+	border-bottom: 450px solid #f0eecc;
+}
